@@ -5496,7 +5496,7 @@
                     f = (0, i.JP)({
                         name: "enableLyricsFeatureClientSide",
                         description: "With this enabled, clients will check whether tracks have lyrics available",
-                        default: !1
+                        default: !0
                     }),
                     m = ((0, i.JP)({
                         name: "enableInlineCuration",
@@ -55717,6 +55717,7 @@
                     },
                     a = e => {
                         var t, n, r;
+						return true;
                         return "premium" === (null === (t = e.session) || void 0 === t || null === (n = t.productState) || void 0 === n || null === (r = n.catalogue) || void 0 === r ? void 0 : r.toLowerCase())
                     },
                     s = e => {
